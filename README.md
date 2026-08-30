@@ -1,2 +1,2 @@
 # Komitowers.com
-Official website of KomiGroup from Slovakia – high-voltage transmission line construction.
+Official website of KOMI Towers – high-voltage transmission line construction and tower assembly.
