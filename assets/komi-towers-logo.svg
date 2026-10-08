@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+  <title id="title">KOMI Towers</title>
+  <desc id="desc">KOMI Towers — European Energy Infrastructure</desc>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M74 18 L38 162 M118 18 L154 162"/>
+    <path d="M52 58 H140 M44 94 H148 M34 130 H158"/>
+    <path d="M74 18 H118 M60 162 H136"/>
+    <path d="M57 58 L132 94 M135 58 L60 94 M48 94 L143 130 M144 94 L49 130" stroke-width="4"/>
+    <path d="M55 40 H137 M42 75 H150 M31 112 H161" stroke-width="4"/>
+  </g>
+  <g fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="198" y="86" font-size="82" letter-spacing="1">KOMI</text>
+  </g>
+  <rect x="202" y="101" width="470" height="8" fill="#F5A623"/>
+  <text x="202" y="149" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="500" letter-spacing="16">TOWERS</text>
+  <text x="204" y="178" fill="#AEBBC3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" letter-spacing="5">EUROPEAN ENERGY INFRASTRUCTURE</text>
+</svg>
