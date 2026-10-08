@@ -1,13 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
   <title id="title">KOMI Towers</title>
   <desc id="desc">KOMI Towers — European Energy Infrastructure</desc>
-  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M74 18 L38 162 M118 18 L154 162"/>
-    <path d="M52 58 H140 M44 94 H148 M34 130 H158"/>
-    <path d="M74 18 H118 M60 162 H136"/>
-    <path d="M57 58 L132 94 M135 58 L60 94 M48 94 L143 130 M144 94 L49 130" stroke-width="4"/>
-    <path d="M55 40 H137 M42 75 H150 M31 112 H161" stroke-width="4"/>
-  </g>
+<g id="transmission-tower" fill="#ffffff">
+<path d="M94 8 L104 9 L135 176 L125 175 L98 26 L70 175 L59 176 Z"/>
+<path d="M92 9 L65 20 L65 26 L95 17 Z M105 13 L125 23 L125 29 L107 21 Z"/>
+<path d="M85 35 L53 51 L53 59 L86 49 Z M109 35 L143 51 L143 59 L112 49 Z"/>
+<path d="M78 66 L43 83 L43 92 L80 80 Z M116 66 L153 83 L153 92 L114 80 Z"/>
+<path d="M64 22 H126 V28 H64 Z M52 54 H144 V60 H52 Z M42 86 H154 V93 H42 Z"/>
+</g>
+<g fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="miter">
+<path d="M88 27 L106 40 L84 52 L113 68 L79 85 L119 109 L70 146 M106 27 L88 40 L112 52 L81 68 L118 85 L75 109 L128 146"/>
+</g>
+<g fill="#ffffff">
+<rect x="64" y="28" width="4" height="20"/><rect x="61" y="30" width="10" height="3"/><rect x="61" y="35" width="10" height="3"/><rect x="61" y="40" width="10" height="3"/><rect x="61" y="45" width="10" height="3"/><rect x="122" y="28" width="4" height="20"/><rect x="119" y="30" width="10" height="3"/><rect x="119" y="35" width="10" height="3"/><rect x="119" y="40" width="10" height="3"/><rect x="119" y="45" width="10" height="3"/><rect x="52" y="60" width="4" height="20"/><rect x="49" y="62" width="10" height="3"/><rect x="49" y="67" width="10" height="3"/><rect x="49" y="72" width="10" height="3"/><rect x="49" y="77" width="10" height="3"/><rect x="140" y="60" width="4" height="20"/><rect x="137" y="62" width="10" height="3"/><rect x="137" y="67" width="10" height="3"/><rect x="137" y="72" width="10" height="3"/><rect x="137" y="77" width="10" height="3"/><rect x="42" y="93" width="4" height="20"/><rect x="39" y="95" width="10" height="3"/><rect x="39" y="100" width="10" height="3"/><rect x="39" y="105" width="10" height="3"/><rect x="39" y="110" width="10" height="3"/><rect x="150" y="93" width="4" height="20"/><rect x="147" y="95" width="10" height="3"/><rect x="147" y="100" width="10" height="3"/><rect x="147" y="105" width="10" height="3"/><rect x="147" y="110" width="10" height="3"/>
+</g>
   <g fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900">
     <text x="198" y="86" font-size="82" letter-spacing="1">KOMI</text>
   </g>
