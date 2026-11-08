@@ -35,11 +35,11 @@ function doPost(e) {
         !ALLOWED.applicant_type.includes(type) ||
         !ALLOWED.experience.includes(exp) ||
         !ALLOWED.language.includes(lang) ||
-        !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email) ||
-        !/^\\+?[0-9 ()\\-]{6,60}$/.test(phone)) return result_('invalid',lang);
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+        !/^\+?[0-9 ()\-]{6,60}$/.test(phone)) return result_('invalid',lang);
     const available=val('available_from'), team=val('crew_size'), details=val('details');
-    if (available && !/^\\d{4}-\\d{2}$/.test(available)) return result_('invalid',lang);
-    if (team && (!/^\\d{1,3}$/.test(team) || +team<1 || +team>100)) return result_('invalid',lang);
+    if (available && !/^\d{4}-\d{2}$/.test(available)) return result_('invalid',lang);
+    if (team && (!/^\d{1,3}$/.test(team) || +team<1 || +team>100)) return result_('invalid',lang);
 
     const cache=CacheService.getScriptCache();
     const key='r:'+Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,email.toLowerCase())).slice(0,32);
@@ -68,7 +68,7 @@ function doPost(e) {
 // Avoid formula evaluation in Google Sheets for untrusted text.
 function safe_(raw,maxlen) {
   let s=String(raw==null?'':raw).trim().slice(0,maxlen);
-  if (/^[=+\\-@]/.test(s)) s="'"+s;
+  if (/^[=+\-@]/.test(s)) s="'"+s;
   return s;
 }
 
