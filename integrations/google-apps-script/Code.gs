@@ -27,7 +27,7 @@ function doPost(e) {
   try {
     const p = (e && e.parameter) || {};
     if (p['bot-field']) return result_('ok');
-    const val = key => safe_(p[key], MAX[key] || 80);
+    const val = key => String(p[key] == null ? '' : p[key]).trim().slice(0, MAX[key] || 80);
     const name=val('full_name'), email=val('email'), phone=val('phone'), country=val('country');
     const type=val('applicant_type'), exp=val('experience'), lang=val('language') || 'en';
     const privacy=val('privacy_acknowledged');
@@ -51,8 +51,8 @@ function doPost(e) {
       const sheet=SpreadsheetApp.openById(SPREADSHEET_ID).getSheetByName(SHEET_NAME);
       if (!sheet) throw new Error('Sheet not found');
       sheet.appendRow([
-        new Date(),name,email,phone,country,type,exp,available,team,
-        details,lang,'yes','Új',''
+        new Date(),safe_(name),safe_(email),safe_(phone),safe_(country),type,exp,available,team,
+        safe_(details),lang,'yes','Új',''
       ]);
       cache.put(key,'1',60);
     } finally {
@@ -66,8 +66,8 @@ function doPost(e) {
 }
 
 // Avoid formula evaluation in Google Sheets for untrusted text.
-function safe_(raw,maxlen) {
-  let s=String(raw==null?'':raw).trim().slice(0,maxlen);
+function safe_(raw) {
+  let s=String(raw==null?'':raw);
   if (/^[=+\-@]/.test(s)) s="'"+s;
   return s;
 }
